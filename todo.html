@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- //main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- //font awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <title>ToDo-List</title>
+</head>
+<body>
+   <div class="header">
+
+     <div class="container">
+        <h3 id="welcomeMsg"></h3>
+        <div class="Title">
+            <div class="details">
+                <h2>ToDo-List</h2>
+                <p>Keep it up !</p>
+                <div id="progresBar">
+                    <div id="progress">
+
+                    </div>
+                </div>
+            </div>
+            <div class="circle">
+                <p class="numbers">0/0</p>
+            </div>
+        </div>
+     
+    </div>
+   </div>
+   
+   <div class=" List">
+    <div class="container-Details">
+         <form action="">
+            <input type="text" name="" id="TaskInput" placeholder="Write Your Task!">
+            <button class="plus" type="submit" id="add">
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </form>
+         <div class="DeleteAll" id="DeleteAll">
+    <button type="submit" onclick="DeleteAll()">Delete All</button>
+   </div>
+        <ul class="taskList">
+           
+          
+        </ul>
+    </div>
+   </div>
+    <script src="js/todo.js">
+       
+    </script>
+    <script>
+        let name = localStorage.getItem("username");
+document.getElementById("welcomeMsg").innerText = `Welcome ${name}!`;
+    </script>
+</body>
+</html>
