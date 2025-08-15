@@ -86,7 +86,7 @@ body {
   max-width: 400px;
   margin: 50px auto;
   text-align: center;
-  transform: translatey(180%);
+  transform: translatey(50%);
 }
 .container-Details {
   width: 100%;
